@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>群聊静音</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="head">
+        <div>
+          <p class="eyebrow">群聊静音</p>
+          <h1>让机器人在哪些群闭嘴</h1>
+          <p class="sub">列表来自机器人实际收到的群消息，打开开关即生效。</p>
+        </div>
+        <button id="refresh" class="btn ghost" type="button">刷新</button>
+      </header>
+
+      <p id="message" class="message" role="status" hidden></p>
+
+      <section class="summary" aria-live="polite">
+        <div class="stat"><span id="stat-total">0</span><small>已知群聊</small></div>
+        <div class="stat"><span id="stat-muted">0</span><small>已静音</small></div>
+      </section>
+
+      <section class="list" id="list" aria-label="群聊列表">
+        <p class="empty">正在加载…</p>
+      </section>
+
+      <footer class="foot">
+        <p>提示：静音后机器人在该群完全不说话（连 @ 也不回），但可以用「群静音」指令解除。</p>
+      </footer>
+    </main>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

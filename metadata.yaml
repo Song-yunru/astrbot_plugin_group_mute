@@ -1,0 +1,8 @@
+name: astrbot_plugin_group_mute
+display_name: 群聊静音
+desc: 自动发现机器人所在的群聊，并让机器人在选定群聊里完全不出声。
+short_desc: 选几个群，让机器人闭嘴。
+version: 1.0.0
+astrbot_version: ">=4.26,<5"
+author: Song-yunru
+repo: "https://github.com/Song-yunru/astrbot_plugin_group_mute"

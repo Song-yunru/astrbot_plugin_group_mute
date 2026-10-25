@@ -1,0 +1,20 @@
+{
+  "muted_groups": {
+    "description": "预置静音群号",
+    "type": "text",
+    "hint": "多个群号用逗号或换行分隔。这里填的群会在启动时自动加入静音；WebUI 页面里的开关会实时生效。",
+    "default": ""
+  },
+  "reply_when_mentioned": {
+    "description": "被 @ 时仍然回复",
+    "type": "bool",
+    "hint": "关闭（默认）= 静音群内即使 @ 机器人也不说话；开启 = 只有 @ 或唤醒词才会回复。",
+    "default": false
+  },
+  "record_groups": {
+    "description": "自动记录群聊",
+    "type": "bool",
+    "hint": "开启后，机器人收到的每条群消息都会记录群号和群名，用于页面列表。",
+    "default": true
+  }
+}
